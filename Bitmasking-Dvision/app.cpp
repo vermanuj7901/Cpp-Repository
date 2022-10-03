@@ -2,7 +2,7 @@
 #include<bits/stdc++.h>
 using namespace std;
 
-void fastExp(int x, int y){
+void divisionBit(int x, int y){
     int q = 0;
     while(x>=y){
         x-=y;
@@ -15,6 +15,6 @@ int main(){
     int x, y;
     cout<<"Enter the dividend and divisor: ";
     cin>>x>>y;
-    fastExp(x, y);
+    divisionBit(x, y);
     cout<<"\nThank You for using the application (Written by ANUJ VERMA)"<<endl;
 }
