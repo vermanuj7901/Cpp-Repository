@@ -3,7 +3,7 @@
 using namespace std;
 
 void inc(int n){
-    if(n==1){
+    if(n==0){
         return;
     }
     inc(n-1);
