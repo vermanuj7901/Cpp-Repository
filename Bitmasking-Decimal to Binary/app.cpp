@@ -2,19 +2,24 @@
 #include<bits/stdc++.h>
 using namespace std;
 
-void countSetBits(int n){
-    int count = 0;
+void convertionBinary(int n){
+    int ans = 0;
+    int pow = 1;
     while(n>0){
-        count += (n&1);
+        int lastBit = (n&1);
+        if(lastBit==1){
+            ans+=(pow*lastBit);
+        }
+        pow*=10;
         n = n>>1;
     }
-    cout<<"Number of set bits are: "<<count<<endl;
+    cout<<"Binary form is: "<<ans<<endl;
 }
 
 int main(){
     int n;
-    cout<<"Enter a number to calculate its set bits: ";
+    cout<<"Enter a number to convert it into binary: ";
     cin>>n;
-    countSetBits(n);
+    convertionBinary(n);
     cout<<"\nThank You for using the application (Written by ANUJ VERMA)"<<endl;
 }
