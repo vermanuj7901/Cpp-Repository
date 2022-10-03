@@ -18,5 +18,5 @@ int main(){
     cout<<"Enter the number: ";
     cin>>n;
     cout<<n<<"! = "<<fact(n)<<endl;
-    cout<<"\nThank You for using the application (Written by ANUJ VERMA)"<<endl;
+    cout<<"\nThank You for using the application (Written by ANUJ VERMA) "<<endl;
 }
