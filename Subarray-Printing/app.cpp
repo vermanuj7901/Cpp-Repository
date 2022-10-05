@@ -22,7 +22,7 @@ int main(){
     for(int i=0; i<n; i++){
         cin>>arr[i];
     }
-    cout<<"All possible subarrays are: "<<endl;
+    cout<<"\nAll possible subarrays are: "<<endl;
     printingSubarray(arr, n);
     cout<<"\nThank You for using th application (Written by ANUJ VERMA)."<<endl;
 }
