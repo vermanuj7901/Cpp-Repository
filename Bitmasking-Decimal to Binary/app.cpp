@@ -2,11 +2,11 @@
 #include<bits/stdc++.h>
 using namespace std;
 
-void convertionBinary(int n){
-    int ans = 0;
-    int pow = 1;
+void convertionBinary(long long n){
+    long long ans = 0;
+    long long pow = 1;
     while(n>0){
-        int lastBit = (n&1);
+        long long lastBit = (n&1);
         if(lastBit==1){
             ans+=(pow*lastBit);
         }
@@ -17,7 +17,7 @@ void convertionBinary(int n){
 }
 
 int main(){
-    int n;
+    long long n;
     cout<<"Enter a number to convert it into binary: ";
     cin>>n;
     convertionBinary(n);
