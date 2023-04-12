@@ -1,7 +1,7 @@
 #include<bits/stdc++.h>
 using namespace std;
 
-int suboptimal(int A[], int N){  //suboptimal: O(unknown)
+int suboptimal(int A[], int N){  //suboptimal: O(unknown), using two pointer approach.
     int miss = 1;
     int i=0, j=0;
     while(i<N-1){
