@@ -18,7 +18,7 @@ int xorApproach(int A[], int n){  //O(n)
     return xorr;
 }
 
-int optimal(int A[], int N){  //optimal: O(log n)
+int optimal(int A[], int N){  //optimal: O(log n) but array needs to be ***sorted***
     int low = 0, high = N-1;
 	if(N == 1) return A[0];
     if(A[0] != A[1]) return A[0];
